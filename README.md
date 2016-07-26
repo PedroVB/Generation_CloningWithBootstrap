@@ -1,1 +1,1 @@
-Clonado de p gina con Bootstrap 
+Clonado Web con Bootstrap 
