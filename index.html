@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Cloning with Bootstrap</title>
+
+	<script src="jquery/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<header class="container">
+		<div class="row">
+			<div class="site-logo col-md-4">
+				<h1 class="logo"><a href="#" title="revera">revera</a></h1>
+			</div>
+			<div class="col-md-8">
+				<nav> 
+					<ul> 
+						<li><a href="#" class="active">Home</a></li> 
+						<li><a href="#">About</a></li> 
+						<li><a href="#">Sample Page</a></li> 
+						<li><a href="#">Portfolio</a></li> 
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">Parent page »</b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Full page</a></li>
+								<li><a href="#">Child page 1</a></li>
+								<li><a href="#">Child page 2</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>  
+			</div> 
+		</div>
+	</header>     
+	<div class="row">
+		<div id="box_slider">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">   
+				<div class="carousel-inner">            
+					<div class="item active">
+						<div class="doverlay"></div>
+						<img src="img/slide1.jpg" alt="...">
+						<div class="text-caption">
+							<h2>Etiam mauris tortor, pharetra quis lobortis in, pharetra in diam</h2>
+							<p>Duis tempus leo vitae ipsum viverra, blandit condimentum sapien porttitor. Duis porttitor sed metus eget mollis. Curabitur bibendum imperdiet tortor, ut pulvinar purus elementum nec. Suspendisse at erat luctus; hendrerit sapien sed, consectetur erat. Maecenas dignissim suscipit orci at molestie. Aenean fringilla dolor vitae lacus lacinia eleifend. Suspendisse et libero nunc. Etiam mauris tortor, pharetra [...]</p>
+							<a class="read_more" href="#"> READ MORE </a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="doverlay"></div>
+						<img src="img/slide2.jpg" alt="...">
+						<div class="text-caption">
+							<h2>Falauris sollicitudin quis dolor venenatis facilisis</h2>
+							<p>Donec sed dolor eu augue dignissim pellentesque. Fusce semper tortor ornare, luctus sem in, dictum leo. Ut at congue quam! Maecenas luctus interdum odio, eget volutpat velit hendrerit eu? Suspendisse at magna ut sem blandit hendrerit non ut magna. Cras quis porta dolor. Aliquam erat volutpat. Phasellus fringilla feugiat libero nec volutpat. Maecenas fermentum bibendum [...]</p>
+							<a class="read_more" href="#"> READ MORE </a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="doverlay"></div>
+						<img src="img/slide3.jpg" alt="...">
+						<div class="text-caption">
+							<h2>Suspendisse ornare, felis feugiat suscipit pharetra</h2>
+							<p>Quisque sit amet sagittis justo. Suspendisse ornare, felis feugiat suscipit pharetra, lorem est viverra odio; tristique tristique diam tellus id tellus. In consectetur aliquet tristique. Curabitur imperdiet leo in nisl consectetur mattis. Quisque bibendum, mauris vitae suscipit ornare; est nibh elementum mauris, eu malesuada nunc magna at justo. Proin blandit id tellus non pellentesque. Mauris [...]</p>
+							<a class="read_more" href="#"> READ MORE </a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="doverlay"></div>
+						<img src="img/slide4.jpg" alt="...">
+						<div class="text-caption">
+							<h2>Fusce scelerisque nibh ac nisl luctus interdum.</h2>
+							<p>Nam luctus velit ultricies vestibulum eleifend. Proin imperdiet varius rutrum. Curabitur placerat lacus eu ligula pellentesque euismod? Aliquam volutpat augue id nibh auctor, at varius dui semper? Suspendisse non pellentesque sapien, et sagittis erat. Quisque et dignissim elit. Sed sit amet sapien ac quam vestibulum suscipit ac id diam. Morbi accumsan est vitae tellus vulputate [...]</p>
+							<a class="read_more" href="#"> READ MORE </a>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<img class="izq" id="izqjs" src="img/izq.png" onmouseover="this.src='img/izq_hover.png';" onmouseout="this.src='img/izq.png';" />
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<img class="dcha" id="dchajs" src="img/dcha.png" onmouseover="this.src='img/dcha_hover.png';" onmouseout="this.src='img/dcha.png';" />
+				</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="elements">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 widget">
+					<span><i class="glyphicon glyphicon-glass"></i></span>
+					<h3> Web design</h3>
+					<p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vehicula erat non congue cursus. Aenean auctor nulla quis augue dictum, sed sagittis odio varius.</p>
+				</div>  
+				<div class="col-md-4 widget">
+					<span><i class="glyphicon glyphicon-star"></i></span>
+					<h3>Web development</h3>
+					<p> Duis tempus leo vitae ipsum viverra, blandit condimentum sapien porttitor. Duis porttitor sed metus eget mollis. Curabitur bibendum imperdiet tortor, ut pulvinar purus elementum nspendisse at erat luctus.</p>
+				</div>  
+				<div class="col-md-4 widget">
+					<span><i class="glyphicon glyphicon-heart"></i></span>
+					<h3>User interface</h3>
+					<p>Cras aliquet venenatis porttitor. Donec rutrum sapien et sapien dignissim, eu dapibus mi molestie. Suspendisse dictum convallis quam et sodales. Praesent non enim et magna congue gravida.</p>
+				</div>  
+			</div>
+		</div>
+	</div>
+	<div class="section container">
+		<div class="row">
+			<div class="title col-md-12">
+				<h2>Latest Projects</h2>
+				<p>Few of the latest portfolio items </p>
+			</div>
+		</div>  
+		<div class="row">
+			<div class="col-md-3 projects">  
+				<a href="#"><img class="img-responsive" src="img/1.jpg"/></a>     
+				<h3><a href="#">Nunc libero elit, iaculis nec augue non</a></h3>     
+			</div>  
+			<div class="col-md-3 projects">   
+				<a href="#"><img class="img-responsive" src="img/2.jpg"/></a>
+				<h3><a href="#">Phasellus aliquet iaculis neque accumsan aliquam</a></h3>     
+			</div>
+			<div class="col-md-3 projects">   
+				<a href="#"><img class="img-responsive" src="img/3.jpg"/></a> 
+				<h3><a href="#">Vivamus blandit ipsum sed arcu euismod</a></h3>
+			</div>  
+			<div class="col-md-3 projects"> 
+				<a href="#"><img class="img-responsive" src="img/4.jpg"/></a> 
+				<h3><a href="#">Curabitur auctor dolor risus, vitae pellentesque arcu consequat</a></h3>     
+			</div> 
+		</div> 
+		<div class="row">
+			<div class="title col-md-12">
+				<h2> Latest Articles</h2>
+				<p>Lates posts from the blog</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 projectssub">  
+				<a href="#"><img class="img-responsive" src="img/5.jpg"/></a>
+				<h3><a href="#">Etiam mauris tortor, pharetra quis lobortis in, pharetra in diam</a></h3>
+				<div class="posted_box">
+					<span>Posted on <a href="#"><time>August 19, 2013</time></a></span>
+					<span> by <span><a class="author" href="#">admin</a></span></span>
+				</div>   
+				<p class="margin_project">Duis tempus leo vitae ipsum viverra, blandit condimentum sapien porttitor. Duis porttitor sed metus eget mollis. Curabitur bibendum imperdiet tortor, ut pulvinar purus elementum nec. Suspendisse at erat luctus; hendrerit sapien sed, consectetur erat. Maecenas dignissim suscipit orci at molestie. Aenean fringilla dolor vitae lacus lacinia eleifend. Suspendisse et libero nunc. Etiam mauris tortor, pharetra [...]</p>
+			</div>       
+			<div class="col-md-3 projectssub">  
+				<a href="#"><img class="img-responsive" src="img/6.jpg"/></a>
+				<h3><a href="#">Falauris sollicitudin quis dolor venenatis facilisis</a></h3>
+				<div class="posted_box">
+					<span>Posted on <a href="#"><time>August 19, 2013</time></a></span>
+					<span> by <span><a class="author" href="#">admin</a></span></span>
+				</div>  
+				<p>Donec sed dolor eu augue dignissim pellentesque. Fusce semper tortor ornare, luctus sem in, dictum leo. Ut at congue quam! Maecenas luctus interdum odio, eget volutpat velit hendrerit eu? Suspendisse at magna ut sem blandit hendrerit non ut magna. Cras quis porta dolor. Aliquam erat volutpat. Phasellus fringilla feugiat libero nec volutpat. Maecenas fermentum bibendum [...]</p>
+			</div>
+			<div class="col-md-3 projectssub"> 
+				<a href="#"><img class="img-responsive" src="img/7.jpg"/></a>
+				<h3><a href="#">Suspendisse ornare, felis feugiat suscipit pharetra</a></h3> 
+				<div class="posted_box">
+					<span>Posted on <a href="#"><time>August 19, 2013</time></a></span>
+					<span> by <span><a class="author" href="#">admin</a></span></span>
+				</div>
+				<p>Quisque sit amet sagittis justo. Suspendisse ornare, felis feugiat suscipit pharetra, lorem est viverra odio; tristique tristique diam tellus id tellus. In consectetur aliquet tristique. Curabitur imperdiet leo in nisl consectetur mattis. Quisque bibendum, mauris vitae suscipit ornare; est nibh elementum mauris, eu malesuada nunc magna at justo. Proin blandit id tellus non pellentesque. Mauris [...]</p>  
+			</div>
+			<div class="col-md-3 projectssub">  
+				<a href="#"><img class="img-responsive" src="img/8.jpg"/></a>
+				<h3><a href="#"> Festibulum purus odio, ornare non posuere</a></h3>
+				<div class="posted_box">
+					<span>Posted on <a href="#"><time>August 19, 2013</time></a></span>
+					<span> by <span><a class="author" href="#">admin</a></span></span>
+				</div>
+				<p>Aenean quis rhoncus nisl, eget sollicitudin ipsum. Curabitur a elementum purus. Quisque vitae dui at arcu porttitor laoreet ac vitae nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Nulla egestas at nunc at volutpat. Nullam sodales at diam vel tempor. Sed pretium, leo vel pellentesque dictum, ligula [...]</p>
+			</div>
+		</div>       
+	</div>
+	<div class="last_part">
+		<div class="container">
+			<div class="row">      
+				<div class="box_last col-md-3">
+					<h3 class="title_last_part">Revera</h3>
+					<div class="textwidget">
+						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vehicula erat non congue cursus. Aenean auctor nulla quis augue dictum, sed sagittis odio varius? Aliquam nec venenatis turpis. Aenean euismod arcu vel volutpat tristique. In mattis ipsum quis magna feugiat, id tempus metus accumsan.</p>
+					</div>
+				</div>
+				<div class="box_last col-md-3">
+					<h3 class="title_last_part">Meta</h3>
+					<ul class="menu_footer">
+						<li><a href="#">Log in</a></li>
+						<hr class="line_point">
+						<li><a href="#">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+						<hr class="line_point">
+						<li><a href="#">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+						<hr class="line_point">
+						<li><a href="#">WordPress.org</a></li>
+						<hr class="line_point">
+					</ul>
+				</div>
+				<div class="box_last col-md-3">
+					<h3 class="title_last_part">Archives</h3>
+					<ul class="menu_footer">
+						<li><a href="#">August 2013</a></li>
+						<hr class="line_point"> 
+					</ul>
+				</div>
+				<div class="box_last col-md-3">
+					<h3 class="title_last_part">Recent Posts</h3>
+					<ul class="menu_footer">
+						<li><a href="#">Etiam mauris tortor, pharetra quis lobortis in, pharetra in diam</a></li>
+						<hr class="line_point"> 
+						<li><a href="#">Nunc libero elit, iaculis nec augue non</a></li>
+						<hr class="line_point"> 
+						<li><a href="#">Falauris sollicitudin quis dolor venenatis facilisis</a></li>
+						<hr class="line_point"> 
+						<li><a href="#">Phasellus aliquet iaculis neque accumsan aliquam</a></li>
+						<hr class="line_point">
+						<li><a href="#">Vivamus blandit ipsum sed arcu euismod</a></li>
+						<hr class="line_point">
+					</ul>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<footer class="box-footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer_info">
+					Copyright © 2016 <a href="#">revera</a> - Just another demo Sites site.<br />
+					| <a href="#" >Revera Theme</a>   
+				</div>
+			</div>
+		</div>  
+	</footer>
+</body>
+</html>
